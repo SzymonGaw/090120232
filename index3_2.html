@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            width: 525px;
+            height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #tabela
+        {
+            width: 525px;
+            height: 110px;
+            background-color: #81D188;
+            padding: 5px;
+        }
+        #wynik
+        {
+            width: 100%;
+            padding: 5px;
+            text-align: center;
+            background-color: #4DC5E7;
+        }
+        #tresc
+        {
+            width: 100%;
+            padding: 5px;
+            text-align: center;
+            background-color: #9EDFD7;
+        }
+    </style>
+    <script>
+        function papuga()
+        {
+            document.getElementById("wynik").innerHTML="PAPUGA"
+            document.getElementById("tresc").innerHTML="Papużko, papużko, <br> Powiedz mi na uszko.<br> Nic ni powiem, boś ty plotkarz,<br> powtórzysz każdemu, kogo spotkasz.";
+        }
+
+        function zyrafa()
+        {
+            document.getElementById("wynik").innerHTML="ŻYRAFA"
+            document.getElementById("tresc").innerHTML="Żyraafa tym głównie żyje,<br> że w górę wyciąga szyję. <br>A ja zazdroszczę żyrafie, <br>Ja nie potrafię.";
+        }
+
+        function krokodyl()
+        {
+            document.getElementById("wynik").innerHTML="KROKODYL"
+            document.getElementById("tresc").innerHTML="Skąd ty jesteś, krokodylu?<br> Ja? Znad Nilu. <br>Wypuść mnie na kilka chwili,<br> to zawiozę cię nad Nil.";
+        }
+
+        function zebra()
+        {
+            document.getElementById("wynik").innerHTML="ZEBRA"
+            document.getElementById("tresc").innerHTML="Czy ty zebra jest prawdziwa? <br>Czy to tak naprawdę bywa? <br>Pomalował osła w paski?";
+        }
+
+        function wilk()
+        {
+            document.getElementById("wynik").innerHTML="WILK"
+            document.getElementById("tresc").innerHTML="Powiem ci w słowak kilku, <br>Co myślę o tym wilku:<br> Gdyvy nie był na obrazku, <br> Zaraz by cię zjadł, głuptaku.";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div id="tabela">
+            <table id="dane">
+                <tr>
+                    <td><img src="./papuga.jpg" id="papuga" onkeypress="papuga()" alt="" width="100px;" height="100px"></td>
+                    <td><img src="./żyrafa.jpg" id="zyrafa" onkeydown="zyrafa()" alt="" width="100px;" height="100px"></td>
+                    <td><img src="./krokodyl.jfif" id="krokodyl" onkeydown="krokodyl()" alt="" width="100px;" height="100px"></td>
+                    <td><img src="./zebra.png" id="zebra" onkeydown="zebra()" alt="" width="100px;" height="100px"></td>
+                    <td><img src="./wilk.png" id="wilk" onkeydown="wilk()" alt="" width="100px;" height="100px"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="wynik"></div>
+        <div id="tresc"></div>
+    </div>
+</body>
+</html>
